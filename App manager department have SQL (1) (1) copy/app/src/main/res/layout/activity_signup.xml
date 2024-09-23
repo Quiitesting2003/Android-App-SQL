@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/meo5"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="232dp"
+        android:layout_height="209dp"
+        android:background="@drawable/meo6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textColor="#00ffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="30dp"
+        android:textColor="#00BCD4"/>
+    <EditText
+        android:id="@+id/edit_newusername"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:background="@drawable/shape"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="30dp"
+        android:textColor="#00BCD4"/>
+    <EditText
+        android:id="@+id/edit_newpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:background="@drawable/shape"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm password"
+        android:textSize="30dp"
+        android:textColor="#00BCD4"/>
+    <EditText
+        android:id="@+id/edit_conpassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:background="@drawable/shape"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textColor="#00ffff"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Close"
+            android:backgroundTint="#FF5722"
+            android:textSize="30dp" />
+        <Button
+            android:id="@+id/button_newcreate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Create"
+            android:backgroundTint="#FF5722"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+</LinearLayout>

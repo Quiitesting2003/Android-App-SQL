@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+
+    tools:context=".Department">
+    <Button
+        android:id="@+id/bt_x"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="EXIT"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="right"/>
+
+    <EditText
+        android:id="@+id/enterthecode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the department code" />
+    <EditText
+        android:id="@+id/enterthedepartmentname"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter a department name"/>
+    <EditText
+        android:id="@+id/enterthephonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter depart phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:textSize="12dp"
+            android:backgroundTint="#008000"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SEARCH"
+            android:textSize="9.5dp"
+            android:backgroundTint="#0000FF"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="4dp" />
+
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UPDATE"
+            android:backgroundTint="#FFBF00"
+            android:textSize="9dp"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF0000"
+            android:textSize="10dp"
+            android:text="DELETE"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selecter"/>
+
+</LinearLayout>
